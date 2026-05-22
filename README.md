@@ -1,105 +1,203 @@
-📱 CodeAlpha Social Media Platform
+# 📱 CodeAlpha Social Media Platform  
 
-A full-stack Social Media Platform built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
-The platform enables users to create accounts, share posts, interact through likes/comments, and follow other users.
+A full-stack **Social Media Platform** developed using **Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript**.  
+The application allows users to create accounts, share posts, interact through likes and comments, and follow other users.
 
-This project demonstrates a modern backend architecture with secure authentication, REST APIs, and scalable database integration.
+This project demonstrates a **modern backend architecture for social media applications**, including authentication, REST APIs, and database integration.
+ 
+---                                   
+   
+# 🚀 Features 
+ 
+### 🔐 User Authentication 
+- User registration and login
+- Password hashing using **bcrypt**
+- Secure authentication using **JWT tokens**
 
-🚀 Features
-🔐 Authentication System
-User Registration
-User Login
-Password Hashing with bcryptjs
-Secure Authentication using JWT (JSON Web Tokens)
+### 📝 Post Management
+- Create posts
+- View all posts
+- Like posts
+- Comment on posts
 
-📝 Post Management
-Create New Posts
-View All Posts
-Like Posts
-Comment on Posts
+### 👥 Social Features
+- Follow / Unfollow users
+- View user profiles
+- Track followers and following
 
-👥 Social Features
-Follow / Unfollow Users
-User Profiles
-Followers & Following System
-🌐 REST API Architecture
-RESTful API Design
-Modular Route Structure
-Middleware-based Authentication
-Scalable Backend Architecture
+### 🌐 RESTful API Design
+- Modular API architecture
+- Organized routes and models
+- Scalable backend structure
 
-🛠️ Tech Stack
-Frontend
-HTML5
-CSS3
-JavaScript
-Backend
-Node.js
-Express.js
-Database
-MongoDB Atlas
-Mongoose
-Authentication & Security
-JWT (JSON Web Tokens)
-bcryptjs
-Tools & Deployment
-Postman
-Git & GitHub
+---   
 
-📂 Project Structure
-CodeAlpha-Social-Media-Platform/
-│
-├── backend/
-│   ├── models/
-│   │   ├── User.js
-│   │   └── Post.js
-│   │
-│   ├── routes/
-│   │   ├── userRoutes.js
-│   │   └── postRoutes.js
-│   │
-│   ├── middleware/
-│   │   └── authMiddleware.js
-│   │
-│   ├── server.js
-│   ├── package.json
-│   └── .env
-│
-├── frontend/
-│   ├── index.html
-│   ├── login.html
-│   ├── register.html
-│   ├── profile.html
-│   ├── style.css
-│   └── script.js
-│
-└── README.md
+# 🛠 Tech Stack
 
-📸 Application Workflow
-1️⃣ User Registration
+## Frontend
+- HTML5
+- CSS3
+- JavaScript
 
-Users create an account securely.
+## Backend
+- Node.js
+- Express.js
 
-2️⃣ User Login
+## Database
+- MongoDB Atlas
+- Mongoose
 
-Authentication handled using JWT.
+## Authentication
+- JSON Web Tokens (JWT)
+- bcryptjs
 
-3️⃣ Create Posts
+## Tools
+- Postman
+- Git & GitHub
 
-Authenticated users can publish posts.
+--- 
 
-4️⃣ Interactions
+# 📂 Project Structure
 
-Users can:
+backend  
+│  
+├── models  
+│   ├── User.js  
+│   ├── Post.js  
+│  
+├── routes  
+│   ├── userRoutes.js  
+│   ├── postRoutes.js  
+│  
+├── middleware  
+│   └── authMiddleware.js  
+│  
+├── server.js  
+├── package.json  
+└── .env  
 
-Like posts
-Comment on posts
-5️⃣ Social Connections
+frontend  
+│  
+├── index.html  
+├── login.html  
+├── register.html  
+├── profile.html  
+├── style.css  
+└── script.js  
 
-Users can:
+---
 
-Follow other users
+# ⚙️ Installation & Setup
 
-View profiles
+### 1️⃣ Clone the repository
 
-Track followers/following
+git clone https://github.com/banamali9337-debug/CodeAlpha_SocialMedia.git
+
+---
+
+### 2️⃣ Navigate to backend folder
+
+cd CodeAlpha_SocialMedia/backend
+
+---
+
+### 3️⃣ Install dependencies
+
+npm install
+
+---
+
+### 4️⃣ Create environment variables
+
+Create a `.env` file
+
+MONGO_URI=your_mongodb_connection_string  
+PORT=5000  
+JWT_SECRET=secret123  
+
+---
+
+### 5️⃣ Start the server
+
+npx nodemon server.js
+
+Server runs on:
+
+http://localhost:5000
+
+---
+
+# 🔗 API Endpoints
+
+### User APIs
+
+POST /api/users/register → Register new user  
+POST /api/users/login → Login user  
+PUT /api/users/follow/:id → Follow a user  
+
+---
+
+### Post APIs
+
+POST /api/posts → Create post  
+GET /api/posts → Get all posts  
+PUT /api/posts/:id/like → Like a post  
+POST /api/posts/:id/comment → Comment on a post  
+
+---
+
+# 🗄 Database Schema
+
+## Users
+
+name  
+email  
+password  
+followers  
+following  
+
+---
+
+## Posts
+
+userId  
+description  
+likes  
+comments  
+
+---
+
+# 📸 Example Workflow
+
+1️⃣ User registers an account  
+2️⃣ User logs into the system  
+3️⃣ User creates a post  
+4️⃣ Other users can like or comment on the post  
+5️⃣ Users can follow each other  
+
+---
+
+# 📈 Future Improvements
+
+- Real-time notifications
+- Media upload (images/videos)
+- Chat system between users
+- React.js frontend
+- WebSocket-based real-time updates
+
+---
+
+# 👩‍💻 Author
+
+**Banamali Pradhan**
+
+Full Stack Developer | MERN Stack Enthusiast
+
+GitHub  
+https://github.com/banamali9337-debug
+
+---
+
+# 📜 License
+
+This project was developed for educational and internship purposes.
