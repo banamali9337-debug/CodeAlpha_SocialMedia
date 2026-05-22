@@ -99,5 +99,7 @@ Comment on posts
 Users can:
 
 Follow other users
+
 View profiles
+
 Track followers/following
