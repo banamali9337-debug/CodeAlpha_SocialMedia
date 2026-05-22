@@ -9,19 +9,23 @@ This project demonstrates a modern backend architecture for social media applica
 User registration and login
 Password hashing using bcrypt
 Secure authentication using JWT tokens
+
 📝 Post Management
 Create posts
 View all posts
 Like posts
 Comment on posts
+
 👥 Social Features
 Follow / Unfollow users
 View user profiles
 Track followers and following
+
 🌐 RESTful API Design
 Modular API architecture
 Organized routes and models
 Scalable backend structure
+
 🛠 Tech Stack
 Frontend
 HTML5
