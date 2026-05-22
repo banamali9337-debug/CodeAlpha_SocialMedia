@@ -38,6 +38,7 @@ JSON Web Tokens (JWT)
 bcryptjs
 Tools
 Postman
+
 Git & GitHub
 📂 Project Structure
 backend
