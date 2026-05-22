@@ -1,32 +1,34 @@
 📱 CodeAlpha Social Media Platform
-A full-stack Social Media Platform developed using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
-The application allows users to create accounts, share posts, interact through likes and comments, and follow other users.
 
-This project demonstrates a modern backend architecture for social media applications, including authentication, REST APIs, and database integration.
+A full-stack Social Media Platform built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
+The platform enables users to create accounts, share posts, interact through likes/comments, and follow other users.
+
+This project demonstrates a modern backend architecture with secure authentication, REST APIs, and scalable database integration.
 
 🚀 Features
-🔐 User Authentication
-User registration and login
-Password hashing using bcrypt
-Secure authentication using JWT tokens
+🔐 Authentication System
+User Registration
+User Login
+Password Hashing with bcryptjs
+Secure Authentication using JWT (JSON Web Tokens)
 
 📝 Post Management
-Create posts
-View all posts
-Like posts
-Comment on posts
+Create New Posts
+View All Posts
+Like Posts
+Comment on Posts
 
 👥 Social Features
-Follow / Unfollow users
-View user profiles
-Track followers and following
+Follow / Unfollow Users
+User Profiles
+Followers & Following System
+🌐 REST API Architecture
+RESTful API Design
+Modular Route Structure
+Middleware-based Authentication
+Scalable Backend Architecture
 
-🌐 RESTful API Design
-Modular API architecture
-Organized routes and models
-Scalable backend structure
-
-🛠 Tech Stack
+🛠️ Tech Stack
 Frontend
 HTML5
 CSS3
@@ -37,62 +39,65 @@ Express.js
 Database
 MongoDB Atlas
 Mongoose
-Authentication
-JSON Web Tokens (JWT)
+Authentication & Security
+JWT (JSON Web Tokens)
 bcryptjs
-Tools
+Tools & Deployment
 Postman
-
 Git & GitHub
+
 📂 Project Structure
-backend
+CodeAlpha-Social-Media-Platform/
 │
-├── models
-│ ├── User.js
-│ ├── Post.js
+├── backend/
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Post.js
+│   │
+│   ├── routes/
+│   │   ├── userRoutes.js
+│   │   └── postRoutes.js
+│   │
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   │
+│   ├── server.js
+│   ├── package.json
+│   └── .env
 │
-├── routes
-│ ├── userRoutes.js
-│ ├── postRoutes.js
+├── frontend/
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── profile.html
+│   ├── style.css
+│   └── script.js
 │
-├── middleware
-│ └── authMiddleware.js
-│
-├── server.js
-├── package.json
-└── .env
+└── README.md
 
-frontend
-│
-├── index.html
-├── login.html
-├── register.html
-├── profile.html
-├── style.css
-└── script.js
+📸 Application Workflow
+1️⃣ User Registration
 
+Users create an account securely.
 
+2️⃣ User Login
 
-📸 Example Workflow
-1️⃣ User registers an account
-2️⃣ User logs into the system
-3️⃣ User creates a post
-4️⃣ Other users can like or comment on the post
-5️⃣ Users can follow each other
+Authentication handled using JWT.
 
-📈 Future Improvements
-Real-time notifications
-Media upload (images/videos)
-Chat system between users
-React.js frontend
-WebSocket-based real-time updates
-👩‍💻 Author
-Banamali Pradha
+3️⃣ Create Posts
 
-Full Stack Developer | MERN Stack Enthusiast
+Authenticated users can publish posts.
 
-GitHub
-https://github.com/banamali9337-debug
+4️⃣ Interactions
 
-📜 License
-This project was developed for educational and internship purposes.
+Users can:
+
+Like posts
+Comment on posts
+5️⃣ Social Connections
+
+Users can:
+
+Follow other users
+View profiles
+Track followers/following
